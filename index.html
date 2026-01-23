@@ -49,3 +49,263 @@
 <script src="script.js"></script>
 </body>
 </html>
+ 
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shoe Features</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9fb;
+      color: #333;
+    }
+
+    .features-section {
+      max-width: 1200px;
+      margin: 50px auto;
+      padding: 0 20px;
+      text-align: center;
+    }
+
+    .features-section h2 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+      font-weight: 700;
+    }
+
+    .features-section .subtitle {
+      color: #f97316; /* оранжевый */
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-size: 0.9rem;
+      margin-bottom: 20px;
+    }
+
+    .features-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .feature-card {
+      background-color: #fff;
+      border-radius: 15px;
+      padding: 30px 20px;
+      flex: 1 1 250px;
+      max-width: 300px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    }
+
+    .feature-icon {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 15px auto;
+      font-size: 1.5rem;
+    }
+
+    .quality { background-color: #e6edff; color: #2563eb; }
+    .flexible { background-color: #fef2f2; color: #7c3aed; }
+    .longlasting { background-color: #f5f3ff; color: #8b5cf6; }
+
+    .feature-card h3 {
+      margin: 10px 0;
+      font-size: 1.2rem;
+      font-weight: 600;
+    }
+
+    .feature-card p {
+      font-size: 0.95rem;
+      color: #666;
+      margin-bottom: 15px;
+    }
+
+    .feature-card a {
+      text-decoration: none;
+      color: #f97316;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+
+    .feature-card a:hover {
+      color: #d65a0f;
+    }
+
+    @media(max-width: 900px) {
+      .features-container {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<section class="features-section">
+  <div class="subtitle">FEATURE</div>
+  <h2>We have best feature in Shoes</h2>
+
+  <div class="features-container">
+    <div class="feature-card">
+      <div class="feature-icon quality">★</div>
+      <h3>Quality</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra in ul.</p>
+      <a href="#">Read more &gt;</a>
+    </div>
+
+    <div class="feature-card">
+      <div class="feature-icon flexible">↻</div>
+      <h3>Flexible</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra in ul.</p>
+      <a href="#">Read more &gt;</a>
+    </div>
+
+    <div class="feature-card">
+      <div class="feature-icon longlasting">⏱</div>
+      <h3>Long Lasting</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra in ul.</p>
+      <a href="#">Read more &gt;</a>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GALLARY</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    margin: 20px;
+  }
+
+  .gallery-container {
+    border: 2px solid #4aa0ff;
+    padding: 20px;
+    max-width: 1000px;
+    margin: auto;
+  }
+
+  .gallery-container h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .categories {
+    margin-bottom: 20px;
+  }
+
+  .categories span {
+    margin-right: 15px;
+    cursor: pointer;
+    color: gray;
+  }
+
+  .categories .active {
+    color: orange;
+    font-weight: bold;
+  }
+
+  .cards {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+
+  .card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    width: 220px;
+    text-align: center;
+  }
+
+  .card img {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  .card h3 {
+    margin: 10px 0 5px 0;
+    font-size: 16px;
+  }
+
+  .card p {
+    margin: 5px 0;
+    font-size: 14px;
+  }
+
+  .card button {
+    margin-top: 10px;
+    background-color: orange;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .card button:hover {
+    background-color: darkorange;
+  }
+</style>
+</head>
+<body>
+
+<div class="gallery-container">
+  <div class="header">
+    <h1>40+ YEARS’ EXPERIENCE</h1>
+    <div class="categories">
+      <span class="category active" data-category="All">All</span>
+      <span class="category" data-category="Male">Male</span>
+      <span class="category" data-category="Female">Female</span>
+      <span class="category" data-category="Kids">Kids</span>
+    </div>
+  </div>
+
+  <div class="cards" id="cards-container">
+    <!-- Cards will be inserted here dynamically -->
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
